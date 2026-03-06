@@ -5,18 +5,21 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 
 ## 🚀 Status Wyzwania
 - [x] **Dzień 1:** Rozdziały 1 & 2 (Instalacja, Hello World, Gra w zgadywanie)
-- [ ] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia)
-- [ ] ...
+- [x] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia, Typy danych, Funkcje, Pętle + Boss Rush)
+- [ ] **Dzień 3:** Rozdział 4 (Ownership - Własność)
 
 ## 📂 Struktura Projektów
-- `hello_world/` - Klasyczny początek.
-- `hello_cargo/` - Pierwsze kroki z menedżerem pakietów Cargo.
-- `guessing_game/` - Projekt z rozdziału 2: Gra w zgadywanie liczb (obsługa wejścia, losowanie, `match`).
+- **Chapter1/** - Podstawy (Hello World, Cargo).
+- **Chapter2/** - Projekt: `guessing_game` (Gra w zgadywanie).
+- **Chapter3/**
+    - `variables/` - Mutowalność i stałe.
+    - `data_types/` - Skalary, krotki i tablice.
+    - `chapter3_challenges/` - Konwerter temp., Fibbonaci, Kolęda.
 
 ## 🛠️ Jak uruchomić?
 Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
-1. Wejdź do folderu: `cd nazwa_projektu`
+1. Wejdź do folderu: `cd ChapterX/nazwa_projektu`
 2. Uruchom: `cargo run`
 
 ---
-*🦀::<>* 
+*🦀::Done with Chapter 3::✅*
