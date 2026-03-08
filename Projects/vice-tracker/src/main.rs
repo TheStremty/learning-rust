@@ -1,3 +1,5 @@
+use std::io;
+use std::process::exit;
 struct Habit{
     name: String,
     goal_days: u32,
@@ -23,7 +25,47 @@ impl Habit{
 }
 
 fn main(){
-    let mut coffee_habit = Habit::new(String::from("Picie kawy"), 30,0,true);
-    coffee_habit.add_day();
-    coffee_habit.print_report();
+    let mut habits = Vec::<Habit>::new();
+    let mut choice = readline();
+
+    //konwersja na int + shadowing
+    let choice: u32 = match choice.parse() {
+        Ok(option) => option,
+        Err(_) => exit(1),
+    };
+
+    match choice {
+        1 => {
+            habits.push(add_habit());
+            println!("Pomyślnie utworzono nowy nawyk!");
+        },
+        2 => {
+            if !habits.is_empty() {
+                for h in &habits{ h.print_report() }
+            }
+            else {
+                println!("Brak nawyków!");
+            }
+        },
+        _ => exit(1),
+    }
+
+
+}
+
+fn add_habit() -> Habit {
+    println!("Dodawanie nawyku.\nPodaj nazwę nawyku: ");
+    let name = readline();
+    println!("Cel (ile dni do końca): ");
+    let goal_days: u32 = match readline().parse() {
+        Ok(num) => num,
+        Err(_) => exit(1),
+    };
+    Habit::new(name, goal_days, 0, true)
+}
+
+fn readline() -> String{
+    let mut line = String::new();
+    io::stdin().read_line(&mut line).expect("Failed to read line");
+    line.trim().to_string()
 }
