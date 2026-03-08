@@ -6,23 +6,26 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 
 ## 🚀 Status Wyzwania
 
--   \[x\] **Dzień 1:** Rozdziały 1 & 2 (Instalacja, Hello World, Gra w zgadywanie)
--   \[x\] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia, Typy danych, Funkcje, Pętle + Boss Rush)
--   \[x\] **Dzień 3:** Rozdział 4 (Ownership - Własność, Referencje, Slices)
--   \[ \] **Dzień 4:** Rozdział 5 (Struktury - Grupowanie powiązanych danych)
+-   [x] **Dzień 1:** Rozdziały 1 & 2 (Instalacja, Hello World, Gra w zgadywanie)
+-   [x] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia, Typy danych, Funkcje, Pętle + Boss Rush)
+-   [x] **Dzień 3:** Rozdział 4 (Ownership - Własność, Referencje, Slices)
+-   [x] **Dzień 4:** Rozdział 5 (Struktury - Grupowanie powiązanych danych, Metody)
+-   [ ] **Dzień 5:** Rozdział 6 ...
 
 ## 📂 Struktura Projektów
-
+-   **Projects/**
+    -   `vice_tracker/` - (W TRAKCIE) Projekt CLI do śledzenia nawyków i nałogów.
 -   **Chapter1/** - Podstawy (Hello World, Cargo).
 -   **Chapter2/** - Projekt: `guessing_game` (Gra w zgadywanie).
 -   **Chapter3/**
-
-  -   `variables/` - Mutowalność i stałe.
-  -   `data_types/` - Skalary, krotki i tablice.
-  -   `chapter3_challenges/` - Konwerter temp., Fibbonaci, Kolęda.
+    -   `variables/` - Mutowalność i stałe.
+    -   `data_types/` - Skalary, krotki i tablice.
+    -   `chapter3_challenges/` - Konwerter temp., Fibonacci, Kolęda.
 -   **Chapter4/**
+    -   `ownership/` - Jeden projekt zawierający wszystko: Ownership, Referencje i Slices.
+-   **Chapter5/**
+    -   `structures/` - Definiowanie struktur i bloki `impl`. Jeden projekt zawierający wszystko z rozdziału 5.
 
-  -   `ownership/` - Jeden projekt zawierający wszystko: Ownership, Referencje i Slices.
 
 ## 📝 Notatki i ściągi
 
@@ -35,5 +38,4 @@ Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
 1.  Wejdź do folderu: `cd ChapterX/nazwa_projektu`
 2.  Uruchom: `cargo run`
 
-_🦀::Done with Chapter 4 - Memory Safely Mastered::✅_
-
+_🦀::Done with Chapter 5 - Structs Assembled::✅_
