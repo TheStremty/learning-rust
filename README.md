@@ -10,7 +10,8 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 -   [x] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia, Typy danych, Funkcje, Pętle + Boss Rush)
 -   [x] **Dzień 3:** Rozdział 4 (Ownership - Własność, Referencje, Slices)
 -   [x] **Dzień 4:** Rozdział 5 (Struktury - Grupowanie powiązanych danych, Metody)
--   [ ] **Dzień 5:** Rozdział 6 ...
+-   [x] **Dzień 5:** Rozdział 6 (Enumy, Option<T>, Match i if let - Pancerne typy danych)
+-   [ ] **Dzień 6:** Rozdział 7 ...
 
 ## 📂 Struktura Projektów
 -   **Projects/**
@@ -24,8 +25,9 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 -   **Chapter4/**
     -   `ownership/` - Jeden projekt zawierający wszystko: Ownership, Referencje i Slices.
 -   **Chapter5/**
-    -   `structures/` - Definiowanie struktur i bloki `impl`. Jeden projekt zawierający wszystko z rozdziału 5.
-
+    -   `structures/` - Definiowanie struktur i bloki `impl`.
+-   **Chapter6/**
+    -   `enums/` - Definiowanie enumów, potęga `Option<T>` oraz bezpieczna obsługa danych przez `match` i `if let`.
 
 ## 📝 Notatki i ściągi
 
@@ -38,4 +40,4 @@ Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
 1.  Wejdź do folderu: `cd ChapterX/nazwa_projektu`
 2.  Uruchom: `cargo run`
 
-_🦀::Done with Chapter 5 - Structs Assembled::✅_
+_🦀::Done with Chapter 6 - Enums Discovered (Goodbye Nulls!)::✅_
