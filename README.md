@@ -11,26 +11,19 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 -   [x] **Dzień 3:** Rozdział 4 (Ownership - Własność, Referencje, Slices)
 -   [x] **Dzień 4:** Rozdział 5 (Struktury - Grupowanie powiązanych danych, Metody)
 -   [x] **Dzień 5:** Rozdział 6 (Enumy, Option<T>, Match i if let - Pancerne typy danych)
--   [x] **Dzień 6:** Rozdział 7 (Pakiety, Crates i Moduły - Zarządzanie strukturą i prywatnością kodu)
--   [ ] **Dzień 7:** Rozdział 8 (Wspólne kolekcje - Vec, String, HashMap)
+-   [x] **Dzień 6:** Rozdział 7 (Pakiety, Crates i Moduły - Zarządzanie strukturą projektu)
+-   [x] **Dzień 7:** **Buffer Day** (Odpoczynek + utrwalenie wiedzy o modułach)
+-   [x] **Dzień 8:** Rozdział 8 (Wspólne kolekcje - Dynamiczne dane w Vec, String i HashMap)
+-   [ ] **Dzień 9:** Rozdział 9 (Obsługa błędów - panic! i Result)
 
 ## 📂 Struktura Projektów
 -   **Projects/**
     -   `vice_tracker/` - (W TRAKCIE) Projekt CLI do śledzenia nawyków i nałogów.
--   **Chapter1/** - Podstawy (Hello World, Cargo).
--   **Chapter2/** - Projekt: `guessing_game` (Gra w zgadywanie).
--   **Chapter3/**
-    -   `variables/` - Mutowalność i stałe.
-    -   `data_types/` - Skalary, krotki i tablice.
-    -   `chapter3_challenges/` - Konwerter temp., Fibonacci, Kolęda.
--   **Chapter4/**
-    -   `ownership/` - Jeden projekt zawierający wszystko: Ownership, Referencje i Slices.
--   **Chapter5/**
-    -   `structures/` - Definiowanie struktur i bloki `impl`.
--   **Chapter6/**
-    -   `enums/` - Definiowanie enumów, potęga `Option<T>` oraz bezpieczna obsługa danych przez `match` i `if let`.
+-   **Chapter1-6/** - (Podstawy, Typy danych, Ownership, Struktury i Enumy)
 -   **Chapter7/**
-    -   `architecture/` - Organizacja kodu: podział na pliki, foldery (`mod.rs`), sterowanie dostępem (`pub`) i re-eksportowanie ścieżek.
+    -   `architecture/` - Organizacja kodu: podział na pliki i moduły.
+-   **Chapter8/**
+    -   `collections/` - Praktyczne zastosowanie Vec<T>, String i HashMap<K, V>.
 
 ## 📝 Notatki i ściągi
 
@@ -43,4 +36,4 @@ Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
 1.  Wejdź do folderu: `cd ChapterX/nazwa_projektu`
 2.  Uruchom: `cargo run`
 
-_🦀::Done with Chapter 7 - Project Structured (Architecture is Key!)::✅_
+_🦀::Done with Chapter 8 - Data in Control (Vectors, Strings & Maps!)::✅_
