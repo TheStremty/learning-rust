@@ -1,46 +1,48 @@
 # 🦀 Rust Learning Journey (22 Days Challenge)
 
-Moje postępy w nauce języka Rust podczas praktyk zawodowych.
+Moje postępy w nauce języka Rust.
 Celem jest przerobienie całej książki **"The Rust Programming Language"** w 22 dni.
 
-## 🚀 Status Wyzwania
+## Status Wyzwania
 
-### 🏁 Podstawy (Rozdziały 1 - 6)
+### Podstawy (Rozdziały 1 - 6)
 - [x] **Dzień 1:** Rozdziały 1 & 2 (Instalacja, Gra w zgadywanie)
 - [x] **Dzień 2:** Rozdział 3 (Podstawowe pojęcia, Typy danych, Pętle)
 - [x] **Dzień 3:** Rozdział 4 (Ownership - Własność, Referencje)
 - [x] **Dzień 4:** Rozdział 5 (Struktury i Metody)
 - [x] **Dzień 5:** Rozdział 6 (Enumy i Option<T>)
 
-### 🏗️ Architektura i Dane (Rozdziały 7 - 10)
+### Architektura i Dane (Rozdziały 7 - 11)
 - [x] **Dzień 6:** Rozdział 7 (Pakiety, Crates i Moduły)
 - [x] **Dzień 7:** **Buffer Day** (Odpoczynek + re-kalibracja)
 - [x] **Dzień 8:** Rozdział 8 (Kolekcje: Vec, String, HashMap)
 - [x] **Dzień 9:** Rozdział 9 (Obsługa błędów - panic!, Result, ? operator)
-- [x] **Dzień 10:** Rozdział 10 (Generics, Traits i Lifetimes) ⚔️
+- [x] **Dzień 10:** Rozdział 10 (Generics, Traits i Lifetimes)
+- [x] **Dzień 11:** Rozdział 11 (Pisanie testów automatycznych)
 
-### 🔜 Nadchodzące
-- [ ] **Dzień 11:** Rozdział 11 (Pisanie testów automatycznych)
+### Nadchodzące
 - [ ] **Dzień 12:** Rozdział 12 (Projekt I/O: Budujemy własne `grep`)
+- [ ] **Dzień 13:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
 
 ---
 
-## 📂 Struktura Projektów
+##  Struktura Projektów
 
 - **Projects/**
-  - `vice_tracker/` - (W TRAKCIE) System śledzenia nawyków i nałogów.
+  `vice_tracker/` - System śledzenia nawyków. Projekt gdzie testuję w praktyce to co uczę się z kolejnych rozdziałów. (W trakcie)
 - **Chapter1-6/** - Podstawy języka, Ownership, Struktury oraz Enumy.
 - **Chapter7/** - Podział kodu na moduły i zarządzanie prywatnością.
 - **Chapter8/** - Praktyczne zastosowanie dynamicznych list i map.
 - **Chapter9/** - Pancerne zarządzanie błędami (Match, Propagacja, ErrorKind).
 - **Chapter10/** - "Święta Trójca": Generyki, Traity i mechanika Lifetimes.
+- **Chapter11/** - Testy jednostkowe, integracyjne oraz dokumentacyjne (doctests).
 
 ---
 
-## 🛠️ Jak uruchomić?
+## Jak uruchomić? 🛠️
 
 Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
 1. Wejdź do folderu: `cd ChapterX/nazwa_projektu`
 2. Uruchom: `cargo run`
 
-> _🦀::Done with Chapter 10 - The Holy Trinity of Rust (Generics, Traits, Lifetimes)::✅_
+> *"Talk is cheap. Show me the code."* — Linus Torvalds
