@@ -1,22 +1,14 @@
-// Zamiast "ui::tui", używasz nazwy crate'a
-use vice_tracker::ui::tui::Menu;
+use vice_tracker::data::tracker;
 
 fn main() {
-    // Tworzysz opcje (używamy vec! dla wygody)
-    let opcje = vec!["Dodaj nawyk", "Pokaż raporty", "Wyjdź"];
-
-    // Tworzysz instancję Menu
-    let glowne_menu = Menu::new(
-        "--- VICE TRACKER v1.0 ---",
-        opcje,
-        "Twój wybór: "
-    );
-
-    // Wyświetlasz
-    glowne_menu.display();
-
-    // Pobierasz wybór
-    let wybor = glowne_menu.get_choice();
-
-    println!("Wybrałeś opcję numer: {}", wybor + 1);
+    let mut habit_tracker = tracker::Tracker::new("Test.json");
+    habit_tracker.add_habit("Nicotine free");
+    match habit_tracker.mark(0,true){
+        Ok(_) => {println!("Oznaczono id 0 na true");},
+        Err(e) => {println!("Ups, {}",e);},
+    }
+    match habit_tracker.mark(5,true){
+        Ok(_) => {println!("Oznaczono id 5 na true");},
+        Err(e) => {println!("Ups, {}",e);},
+    }
 }
