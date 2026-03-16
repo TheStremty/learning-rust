@@ -20,9 +20,12 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - [x] **Dzień 10:** Rozdział 10 (Generics, Traits i Lifetimes)
 - [x] **Dzień 11:** Rozdział 11 (Pisanie testów automatycznych)
 
+### Projekty i zaawansowane
+- [x] **Dzień 12:** Praktyczny projekt `vice-tracker` (Zarządzanie stanem i iteratory) - część dalsza
+
 ### Nadchodzące
-- [ ] **Dzień 12:** Rozdział 12 (Projekt I/O: Budujemy własne `grep`)
-- [ ] **Dzień 13:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
+- [ ] **Dzień 13:** Rozdział 12 (Projekt I/O: Budujemy własne `grep`)
+- [ ] **Dzień 14:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
 
 ---
 
