@@ -22,30 +22,34 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 
 ### Projekty i zaawansowane
 - [x] **Dzień 12:** Praktyczny projekt `vice-tracker` (Zarządzanie stanem i iteratory) - część dalsza
+- [x] **Dzień 13:** Przerwa (Sprawy osobiste)
+- [x] **Dzień 14:** Przerwa (Sprawy osobiste)
+- [x] **Dzień 15:** Rozdział 12 (Projekt I/O: Budujemy własne `minigrep`)
 
 ### Nadchodzące
-- [ ] **Dzień 13:** Rozdział 12 (Projekt I/O: Budujemy własne `grep`)
-- [ ] **Dzień 14:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
+- [ ] **Dzień 16:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
 
 ---
 
 ##  Struktura Projektów
 
 - **Projects/**
-  `vice_tracker/` - System śledzenia nawyków. Projekt gdzie testuję w praktyce to co uczę się z kolejnych rozdziałów. (W trakcie)
+  - `vice_tracker/` - System śledzenia nawyków.
 - **Chapter1-6/** - Podstawy języka, Ownership, Struktury oraz Enumy.
 - **Chapter7/** - Podział kodu na moduły i zarządzanie prywatnością.
 - **Chapter8/** - Praktyczne zastosowanie dynamicznych list i map.
-- **Chapter9/** - Pancerne zarządzanie błędami (Match, Propagacja, ErrorKind).
-- **Chapter10/** - "Święta Trójca": Generyki, Traity i mechanika Lifetimes.
-- **Chapter11/** - Testy jednostkowe, integracyjne oraz dokumentacyjne (doctests).
+- **Chapter9/** - Pancerne zarządzanie błędami.
+- **Chapter10/** - Generyki, Traity i mechanika Lifetimes.
+- **Chapter11/** - Testy jednostkowe i integracyjne.
+- **Chapter12/** 
+  - `minigrep/` - Narzędzie CLI do przeszukiwania plików (Rozdział 12).
 
 ---
 
 ## Jak uruchomić? 🛠️
 
 Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
-1. Wejdź do folderu: `cd ChapterX/nazwa_projektu`
+1. Wejdź do folderu: `cd Projects/nazwa_projektu` lub `cd ChapterX/`
 2. Uruchom: `cargo run`
 
 > *"Talk is cheap. Show me the code."* — Linus Torvalds
