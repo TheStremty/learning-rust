@@ -3,3 +3,6 @@
 .idea
 Cargo.toml
 Cargo.lock
+temp.rs
+temp.exe
+temp.pdb

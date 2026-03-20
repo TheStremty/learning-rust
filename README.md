@@ -25,9 +25,9 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - [x] **Dzień 13:** Przerwa (Sprawy osobiste)
 - [x] **Dzień 14:** Przerwa (Sprawy osobiste)
 - [x] **Dzień 15:** Rozdział 12 (Projekt I/O: Budujemy własne `minigrep`)
-
+- [x] **Dzień 16:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
 ### Nadchodzące
-- [ ] **Dzień 16:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
+- ...
 
 ---
 
@@ -43,7 +43,9 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - **Chapter11/** - Testy jednostkowe i integracyjne.
 - **Chapter12/** 
   - `minigrep/` - Narzędzie CLI do przeszukiwania plików (Rozdział 12).
-
+- **Chapter13-15/**
+   - `c13/` - Domknięcia, iteratory
+   - `c15/` - Smart Pointers
 ---
 
 ## Jak uruchomić? 🛠️
