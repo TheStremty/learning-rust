@@ -26,6 +26,9 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - [x] **Dzień 14:** Przerwa (Sprawy osobiste)
 - [x] **Dzień 15:** Rozdział 12 (Projekt I/O: Budujemy własne `minigrep`)
 - [x] **Dzień 16:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
+- [x] **Dzień 17:** Przerwa (Sprawy osobiste)
+- [x] **Dzień 18:** Rozdział 16 (Wielowątkowość - start)
+- [x] **Dzień 19:** Rozdział 16 (Wielowątkowość) ukończony.
 ### Nadchodzące
 - ...
 
@@ -46,6 +49,7 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - **Chapter13-15/**
    - `c13/` - Domknięcia, iteratory
    - `c15/` - Smart Pointers
+- **Chapter16/** - Wielowątkowość, Arc, Mutex
 ---
 
 ## Jak uruchomić? 🛠️

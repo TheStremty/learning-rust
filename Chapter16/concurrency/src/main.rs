@@ -1,11 +1,63 @@
 use std::thread;
-use std::time::Duration;
 use std::sync::{Arc, Mutex};
+use std::sync::mpsc;
 
 fn main() {
+    handle_demo();
+    move_demo();
     mutex_demo();
+    arc_mutex_demo();
+    mpsc_demo();
+
+    println!("Chapter16: complete");
 }
 
+fn mpsc_demo(){
+    let (tx, rx) = mpsc::channel();
+
+    {
+        let tx1 = tx.clone();
+
+        thread::spawn(move || {
+            tx1.send(String::from("hello world from thread 1")).unwrap();
+        });
+
+        thread::spawn(move || {
+            tx.send(String::from("hello world from thread 2")).unwrap();
+        });
+    }
+
+
+    for received in rx {
+        println!("Got: {}", received);
+    }
+
+}
+
+fn arc_mutex_demo(){
+    // tworzenie licznika wewnątrz Mutexa, Mutex wewnątrz Arc.
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        // klonowanie Arc (kazdy kolejny wątek)
+        let counter = Arc::clone(&counter);
+
+        let handle = thread::spawn(move || {
+            let mut num = counter.lock().unwrap();
+
+            *num += 1;
+        });
+        handles.push(handle);
+
+    }
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    println!("Result: {}", *counter.lock().unwrap());
+}
 
 fn mutex_demo(){
     let m = Mutex::new(5);
