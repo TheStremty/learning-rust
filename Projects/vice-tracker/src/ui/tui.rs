@@ -28,10 +28,13 @@ impl Menu {
 
             let choice = readline();
 
-            if let Ok(index) = choice.parse::<usize>() {
-                if index > 0 && index <= self.options.len() {
-                    return index - 1;
-                }
+            if let Some(index) = choice
+                .parse::<usize>()
+                .ok()
+                .filter(|&i| i > 0 && i <= self.options.len())
+                .map(|i| i - 1)
+            {
+                return index;
             }
 
             clear_console();

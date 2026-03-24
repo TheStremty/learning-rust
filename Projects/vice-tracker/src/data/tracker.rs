@@ -1,5 +1,7 @@
 use crate::data::habits::Habit;
-use chrono::Local;
+use chrono::{Local, Duration};
+use crate::data;
+
 pub struct Tracker {
     habits: Vec<Habit>,
     pub db_path: String,
@@ -19,6 +21,40 @@ impl Tracker {
         self.habits.push(Habit::new(max_id, name));
     }
 
+    pub fn get_habits(&self) -> &Vec<Habit> {
+        &self.habits
+    }
+    pub fn set_habits(&mut self, habits: Vec<Habit>) {
+        self.habits = habits;
+    }
+
+    pub fn get_streak(&self, id: u32) -> u32 {
+        let Some(habit) = self.habits.iter().find(|h| h.id == id) else {
+            return 0;
+        };
+
+        let today = Local::now().date_naive();
+        let yesterday = today - Duration::days(1);
+
+        let mut current_date = if habit.successes.contains(&today) {
+            today
+        } else if habit.successes.contains(&yesterday) {
+            yesterday
+        } else {
+            return 0;
+        };
+
+        let mut streak = 0;
+
+        while habit.successes.contains(&current_date) {
+            streak += 1;
+            current_date = current_date - Duration::days(1);
+        }
+
+        streak
+    }
+
+
     pub fn mark(&mut self, id: u32, done: bool) -> Result<(), String> {
         let today = Local::now().date_naive();
 
@@ -32,4 +68,13 @@ impl Tracker {
         }
         Ok(())
     }
+
+    pub fn save(&self) {
+        data::persistence::save(self).unwrap();
+    }
+
+    pub fn load(&mut self) {
+        data::persistence::load(self).unwrap();
+    }
+
 }
