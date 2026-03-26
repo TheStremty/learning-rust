@@ -29,8 +29,9 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 - [x] **Dzień 17:** Przerwa (Sprawy osobiste)
 - [x] **Dzień 18:** Rozdział 16 (Wielowątkowość - start)
 - [x] **Dzień 19:** Rozdział 16 (Wielowątkowość) ukończony.
-### Nadchodzące
-- ...
+- [x] **Dzień 20:** Rozdziały 17 - 18 (Asynchroniczność, Programowanie obiektowe w Rust, Wzorce dopasowań)
+- [x] **Dzień 21:** Rozdział 19 (Zaawansowane funkcje i wzorce dopasowań w praktyce)
+- [ ] **Dzień 22:** Finał! Rozdział 20 (Wielowątkowy serwer webowy)
 
 ---
 
@@ -38,18 +39,22 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"** w 2
 
 - **Projects/**
   - `vice_tracker/` - System śledzenia nawyków.
+  - `chip8_display/` - Eksperymenty z wyświetlaczem CHIP-8.
 - **Chapter1-6/** - Podstawy języka, Ownership, Struktury oraz Enumy.
 - **Chapter7/** - Podział kodu na moduły i zarządzanie prywatnością.
 - **Chapter8/** - Praktyczne zastosowanie dynamicznych list i map.
 - **Chapter9/** - Pancerne zarządzanie błędami.
 - **Chapter10/** - Generyki, Traity i mechanika Lifetimes.
 - **Chapter11/** - Testy jednostkowe i integracyjne.
-- **Chapter12/** 
-  - `minigrep/` - Narzędzie CLI do przeszukiwania plików (Rozdział 12).
+- **Chapter12/** - `minigrep/` - Narzędzie CLI do przeszukiwania plików (Rozdział 12).
 - **Chapter13-15/**
-   - `c13/` - Domknięcia, iteratory
-   - `c15/` - Smart Pointers
-- **Chapter16/** - Wielowątkowość, Arc, Mutex
+  - `c13/` - Domknięcia, iteratory.
+  - `c15/` - Smart Pointers.
+- **Chapter16/** - Wielowątkowość, Arc, Mutex.
+- **Chapter17/** - Programowanie asynchroniczne
+- **Chapter18/** - Programowanie obiektowe
+- **Chapter19/** - Zaawansowane funkcje języka, system inteligentnego domu (Smart Home).
+
 ---
 
 ## Jak uruchomić? 🛠️
