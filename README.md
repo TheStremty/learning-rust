@@ -1,9 +1,10 @@
-# 🦀 Rust Learning Journey (22 Days Challenge - Extended)
+# 🦀 Rust Learning Journey (Mission Accomplished! 🏆)
 
 Moje postępy w nauce języka Rust.
-Celem jest przerobienie całej książki **"The Rust Programming Language"**.
+Celem było przerobienie całej książki **"The Rust Programming Language"**.
+**Misja zakończona sukcesem.**
 
-## Status Wyzwania
+## Status Wyzwania: UKOŃCZONE ✅
 
 ### Podstawy (Rozdziały 1 - 6)
 - [x] **Dzień 1:** Rozdziały 1 & 2 (Instalacja, Gra w zgadywanie)
@@ -20,33 +21,38 @@ Celem jest przerobienie całej książki **"The Rust Programming Language"**.
 - [x] **Dzień 10:** Rozdział 10 (Generics, Traits i Lifetimes)
 - [x] **Dzień 11:** Rozdział 11 (Pisanie testów automatycznych)
 
-### Projekty i zaawansowane
+### Projekty i zaawansowane (Rozdziały 12 - 21)
 - [x] **Dzień 12:** Projekt `vice-tracker` (Zarządzanie stanem i iteratory)
 - [x] **Dzień 13-14:** Przerwa
 - [x] **Dzień 15:** Rozdział 12 (Projekt I/O: Budujemy własne `minigrep`)
 - [x] **Dzień 16:** Rozdziały 13 - 15 (Closures, Iterators, Smart Pointers)
 - [x] **Dzień 17:** Przerwa
-- [x] **Dzień 18-19:** Rozdział 16 (Wielowątkowość)
+- [x] **Dzień 18-19:** Rozdział 16 (Wielowątkowość - Arc, Mutex, Channels)
 - [x] **Dzień 20:** Rozdziały 17 - 18 (Asynchroniczność, OOP, Wzorce)
 - [x] **Dzień 21:** Rozdział 19 (Zaawansowane wzorce dopasowań)
 - [x] **Dzień 22:** Przerwa
 - [x] **Dzień 23:** Rozdział 20 (Advanced Features: Unsafe, Traity, Typy, Makra)
-- [ ] **Dzień 24:** Finał! Rozdział 21 (Wielowątkowy serwer webowy)
+- [x] **Dzień 24:** **FINAŁ!** Rozdział 21 (Wielowątkowy serwer webowy z ThreadPoolem)
+
+`/Projects` zostanie przeniesiony do innego repo.
+---
+## 🚀 Co dalej? Projekt: `stremtty` 🦉
+
+Po ukończeniu "The Book" ruszam z autorskim projektem **`stremtty`**.
+Jest to zdecentralizowany, bezpieczny "Codeweb" dla programistów:
+- **NoxVault:** Lokalny skarbiec snippetów indeksowany z własnych projektów.
+- **P2P Ghost Chat:** Efemeryczny czat i voice-chat (UDP/Opus) bez centralnych serwerów.
+- **TUI First:** Całość działająca wyłącznie w terminalu (Ratatui + libp2p).
 
 ---
 
-##  Struktura Projektów
+## Struktura Projektów
 
+- **Chapter21/** - `web-server/` - Mój własny, wielowątkowy serwer HTTP od zera.
 - **Projects/**
-  - `vice_tracker/` - System śledzenia nawyków.
+  - `vice-tracker/` - System śledzenia nawyków.
   - `chip8_display/` - Eksperymenty z wyświetlaczem CHIP-8.
-- **Chapter1-11/** - Podstawy, Ownership, Moduły, Kolekcje, Błędy, Testy.
-- **Chapter12/** - `minigrep/` - Narzędzie CLI do przeszukiwania plików.
-- **Chapter13-15/** - Domknięcia, iteratory, Smart Pointers.
-- **Chapter16/** - Wielowątkowość (Arc, Mutex, Channels).
-- **Chapter17-18/** - Asynchroniczność i OOP.
-- **Chapter19/** - Zaawansowane wzorce dopasowań.
-- **Chapter20/** - Zaawansowane funkcje (Unsafe, Associated Types, Macros).
+- **Chapter1-20/** - Kompletne archiwum nauki wszystkich konceptów języka.
 
 ---
 
@@ -56,4 +62,5 @@ Każdy podfolder to osobny projekt Cargo. Aby uruchomić wybrany przykład:
 1. Wejdź do folderu: `cd ChapterX/`
 2. Uruchom: `cargo run`
 
-> *"Talk is cheap. Show me the code."* — Linus Torvalds
+> *"Rust is not just a language. It's a tool for empowering everyone to build reliable and efficient software."*
+

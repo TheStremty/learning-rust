@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --accent: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .error-code {
+            font-size: 12rem;
+            font-weight: 600;
+            line-height: 1;
+            color: #ffffff;
+            opacity: 0.15;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .message {
+            margin-top: -4rem;
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .path {
+            font-family: ui-monospace, monospace;
+            background-color: #1a1a1a;
+            color: #aaaaaa;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+            max-width: 100%;
+            word-break: break-all;
+            border: 1px solid #333;
+        }
+
+        .description {
+            color: #888;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #cccccc;
+            transform: translateY(-2px);
+        }
+
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="icon">⚠️</div>
+
+    <div class="error-code">404</div>
+
+    <h1 class="message">Page not found</h1>
+
+    <div class="path" id="requested-path"></div>
+
+    <p class="description">
+        The page you're looking for doesn't exist or has been moved.<br>
+        Please check the URL and try again.
+    </p>
+
+    <a href="/" class="btn">Return to Home</a>
+</div>
+
+<script>
+    // Display the actual requested path
+    function showRequestedPath() {
+        const pathElement = document.getElementById('requested-path');
+        // Get the path from the URL (everything after the domain)
+        let path = window.location.pathname;
+
+        // If there's a query string, include it for more realism
+        if (window.location.search) {
+            path += window.location.search;
+        }
+
+        // If path is just "/", show something more helpful
+        if (path === '/' || path === '') {
+            path = '/the-page-you-requested';
+        }
+
+        pathElement.textContent = path;
+    }
+
+    // Initialize
+    window.onload = showRequestedPath;
+</script>
+</body>
+</html>
